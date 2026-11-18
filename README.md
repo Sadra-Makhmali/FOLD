@@ -65,13 +65,14 @@ changes.
 
 | File | What it is | Source |
 |---|---|---|
-| `assets/screens/01.png` … `08.png` | Full-size screenshots (1320 × 2868), linked from the press kit | The uncaptioned App Store set in `Store/raw-6.9/`, in this order: `s01-fold`, `s03-origami`, `s02-world-garden`, `s06-ocean`, `s04-starlight`, `s05-world-observatory`, `s07-story`, `s08-world-archive` |
+| `assets/screens/01.png` … `08.png` | Full-size screenshots (1206 × 2622), linked from the press kit | The uncaptioned App Store set in `Store/raw-iphone/`, in this order: `s01-fold`, `s03-origami`, `s02-world-garden`, `s06-ocean`, `s04-starlight`, `s05-world-observatory`, `s07-story`, `s08-world-archive` |
 | `assets/screens/09.png` | The Endless Weave screen (1206 × 2622) | Captured by hand in the simulator: home screen, then the infinity button |
 | `assets/screens/web/01.jpg` … `09.jpg` | The same nine at 804 × 1748, used by the gallery and the press kit thumbnails | Made from the PNGs (command below) |
 | `assets/realms/*.jpg` | Island art for the realm cards, 640 × 640 | Square crops of the island from the "world" screenshots of each realm |
 | `assets/img/app-icon.png` | 1024 × 1024 app icon | Copy of `Store/icon/AppIcon-1024.png` |
 | `assets/img/apple-touch-icon.png`, `favicon-192.png`, `favicon.ico` | Small icons. `favicon-192.png` is also the mark next to "FOLD" in the header and footer | Made from the app icon (commands below) |
-| `assets/img/og-image.png` | 1200 × 630 link-preview image | Copy of `Store/header/link-preview-1200x630.png` |
+| `assets/img/og-image.png` | 1200 × 630 link-preview image | Copy of `Store/website/link-preview-1200x630.png` |
+| `assets/img/world.jpg` | The five islands, shown above the realm cards (1920 × 823) | JPEG made from `Store/header/header-3840x1646.png` |
 | `assets/img/key-art.jpg` | The painting shown in the "Coming soon" block | JPEG made from `Art/header/key-art.png` |
 
 The gallery captions and `alt` texts in `index.html` and `press/index.html` describe these nine
