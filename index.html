@@ -20,7 +20,7 @@
   <meta property="og:image" content="https://foldgame.app/assets/img/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="A paper crane above the words FOLD: Lumi's Paper World, on a soft pastel sky.">
+  <meta property="og:image:alt" content="Lumi, a small white spirit, sitting in a fold of paper beside the words FOLD: Lumi's Paper World, with floating islands behind.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="FOLD: Lumi's Paper World — A calm origami puzzle journey">
   <meta name="twitter:description" content="Fold a sheet of light so matching colours meet, and watch each solved sheet become origami in a world you rebuild.">
@@ -108,12 +108,16 @@
       </radialGradient>
     </defs>
     <symbol id="lumi" viewBox="0 0 48 48">
-      <circle cx="24" cy="24" r="24" fill="url(#g-halo)"/>
-      <circle cx="24" cy="25" r="15" fill="url(#g-lumi)" stroke="#8FC3F2" stroke-opacity="0.55"/>
-      <ellipse cx="19" cy="24.5" rx="1.9" ry="2.9" fill="#3A3760"/>
-      <ellipse cx="29" cy="24.5" rx="1.9" ry="2.9" fill="#3A3760"/>
-      <ellipse cx="15.2" cy="29.5" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.8"/>
-      <ellipse cx="32.8" cy="29.5" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.8"/>
+      <circle cx="24" cy="25" r="23" fill="url(#g-halo)"/>
+      <path d="M9.5 24 L3.5 20.5 L8.5 29 Z" fill="#F8DE8C"/>
+      <path d="M38.5 24 L44.5 20.5 L39.5 29 Z" fill="#F8DE8C"/>
+      <path d="M26 5 C 30 13, 39.5 19, 39.5 28.5 A 15.5 14.5 0 0 1 8.5 28.5 C 8.5 20, 19 14.5, 26 5 Z" fill="url(#g-lumi)" stroke="#9CC6F0" stroke-opacity="0.6"/>
+      <ellipse cx="18.8" cy="27" rx="2.3" ry="3.2" fill="#34325C"/>
+      <ellipse cx="29.2" cy="27" rx="2.3" ry="3.2" fill="#34325C"/>
+      <circle cx="19.5" cy="25.8" r="0.8" fill="#fff"/>
+      <circle cx="29.900" cy="25.8" r="0.8" fill="#fff"/>
+      <ellipse cx="14.2" cy="32" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.85"/>
+      <ellipse cx="33.8" cy="32" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.85"/>
     </symbol>
     <symbol id="gl-b" viewBox="-20 -20 40 40"><path d="M0 -13 C 6 -4, 10 1, 10 6 A 10 10 0 1 1 -10 6 C -10 1, -6 -4, 0 -13 Z" fill="#fff"/></symbol>
     <symbol id="gl-p" viewBox="-20 -20 40 40"><path transform="rotate(35)" d="M0 -14 C 10 -5, 10 7, 0 14 C -10 7, -10 -5, 0 -14 Z" fill="#fff"/></symbol>
@@ -158,10 +162,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./" aria-label="FOLD home">
-        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="14" fill="url(#g-mark)"/>
-          <use href="#crane" x="8" y="13" width="48" height="37" style="--o-1:#FFFFFF;--o-2:#F3EEF9;--o-3:#E4DAF1;--o-4:#B9ADCB;--o-5:#8E82A6"/>
-        </svg>
+        <img class="brand-mark" src="assets/img/favicon-192.png" width="32" height="32" alt="">
         <span class="brand-name">FOLD</span>
       </a>
       <nav class="site-nav" aria-label="Main">
@@ -368,6 +369,7 @@
               <li>Let go past halfway to fold, or earlier to change your mind.</li>
               <li>A fold that cannot happen resists softly and shows you why.</li>
               <li>Undo any fold, as many times as you like.</li>
+              <li>Every match rings a chime tuned to the music of the realm.</li>
             </ul>
           </div>
         </article>
@@ -515,7 +517,7 @@
             <div class="realm-body">
               <h3>The Infinite Archive</h3>
               <p class="realm-sub">Every fold the world has ever made</p>
-              <p>A paper gate, whispering shelves and a thousand cranes, at the heart of the world.</p>
+              <p>A paper gate, whispering shelves and a thousand cranes, where everything you have learned comes together.</p>
             </div>
           </li>
         </ul>
@@ -696,7 +698,7 @@
     <section class="section" id="download" aria-labelledby="download-title">
       <div class="container">
         <div class="cta" data-reveal>
-          <svg class="cta-crane" viewBox="0 0 710 550" aria-hidden="true"><use href="#crane" width="710" height="550"/></svg>
+          <img class="cta-art" src="assets/img/key-art.jpg" width="1536" height="1024" loading="lazy" decoding="async" alt="Lumi sitting in a fold of paper, with two floating islands and paper cranes in a pink evening sky.">
           <h2 id="download-title">Coming soon to the App Store</h2>
           <p class="lead">FOLD: Lumi's Paper World is on its way to iPhone. Free, with nothing to buy.</p>
           <!-- APP STORE BADGE SLOT: replace this placeholder with Apple's official badge and the real App Store link (see README). -->
@@ -719,10 +721,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="./" aria-label="FOLD home">
-            <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-              <rect width="64" height="64" rx="14" fill="url(#g-mark)"/>
-              <use href="#crane" x="8" y="13" width="48" height="37" style="--o-1:#FFFFFF;--o-2:#F3EEF9;--o-3:#E4DAF1;--o-4:#B9ADCB;--o-5:#8E82A6"/>
-            </svg>
+            <img class="brand-mark" src="assets/img/favicon-192.png" width="32" height="32" alt="">
             <span class="brand-name">FOLD</span>
           </a>
           <p>FOLD: Lumi's Paper World is a calm origami puzzle journey for iPhone. Free, offline and quiet by design.</p>
@@ -747,8 +746,8 @@
         </nav>
       </div>
       <div class="footer-base">
-        <p>© 2026 FOLD. This site uses no cookies, no trackers and no analytics.</p>
-        <p>Apple, iPhone, App Store, Game Center and iCloud are trademarks of Apple Inc.</p>
+        <p>© 2026 Sadra Makhmali. This site uses no cookies, no trackers and no analytics.</p>
+        <p>Apple, iPhone, iCloud and App Store are trademarks of Apple Inc.</p>
       </div>
     </div>
   </footer>

@@ -65,13 +65,14 @@ changes.
 
 | File | What it is | Source |
 |---|---|---|
-| `assets/screens/01.png` … `08.png` | Full-size screenshots (1320 × 2868), linked from the press kit | The App Store set made by the UI test `testStoreScreenshots` (`build/uitest-store/shots/`), in this order: `s01-fold`, `s03-origami`, `s02-world-garden`, `s06-ocean`, `s04-starlight`, `s05-world-observatory`, `s07-story`, `s08-world-archive` |
+| `assets/screens/01.png` … `08.png` | Full-size screenshots (1320 × 2868), linked from the press kit | The uncaptioned App Store set in `Store/raw-6.9/`, in this order: `s01-fold`, `s03-origami`, `s02-world-garden`, `s06-ocean`, `s04-starlight`, `s05-world-observatory`, `s07-story`, `s08-world-archive` |
 | `assets/screens/09.png` | The Endless Weave screen (1206 × 2622) | Captured by hand in the simulator: home screen, then the infinity button |
 | `assets/screens/web/01.jpg` … `09.jpg` | The same nine at 804 × 1748, used by the gallery and the press kit thumbnails | Made from the PNGs (command below) |
 | `assets/realms/*.jpg` | Island art for the realm cards, 640 × 640 | Square crops of the island from the "world" screenshots of each realm |
-| `assets/img/app-icon.png` | 1024 × 1024 app icon | Copy of `FOLD/Assets.xcassets/AppIcon.appiconset/AppIcon.png` taken on 2026-11-18 |
-| `assets/img/apple-touch-icon.png`, `favicon-192.png`, `favicon.ico` | Small icons | Made from the app icon |
-| `assets/img/og-image.png` | 1200 × 630 share image (crane, title, tagline) | Generated for the site. Optional: replace with final key art, same size |
+| `assets/img/app-icon.png` | 1024 × 1024 app icon | Copy of `Store/icon/AppIcon-1024.png` |
+| `assets/img/apple-touch-icon.png`, `favicon-192.png`, `favicon.ico` | Small icons. `favicon-192.png` is also the mark next to "FOLD" in the header and footer | Made from the app icon (commands below) |
+| `assets/img/og-image.png` | 1200 × 630 link-preview image | Copy of `Store/header/link-preview-1200x630.png` |
+| `assets/img/key-art.jpg` | The painting shown in the "Coming soon" block | JPEG made from `Art/header/key-art.png` |
 
 The gallery captions and `alt` texts in `index.html` and `press/index.html` describe these nine
 scenes in this order. If a screenshot shows something else, edit the text to match.
@@ -118,11 +119,12 @@ as the licence requires.
 
 The pages state these as facts. Please check them against the final build:
 
-* **iCloud.** The privacy policy and the support page say progress is saved on the device and,
-  when iCloud is on for FOLD, may also be kept in the player's own iCloud and restored from it.
-  If the released app does not sync to iCloud, edit the "iCloud" section of `privacy/index.html`
-  and the "Saving and restoring progress" answers in `support/index.html` (device backups still
-  restore progress either way).
+* **iCloud and Game Center.** Version 1.0 has neither, and the site says so: progress is saved on
+  the device only and travels with the player's own device backup, the game makes no network
+  requests, and the only optional system feature is the local daily reminder. When iCloud sync
+  or Game Center is added to the game, add a section for each to `privacy/index.html` (and change
+  its effective date) and update the "Saving and restoring progress" and "Daily reminder and
+  achievements" answers in `support/index.html`.
 * **Age rating.** Not stated anywhere on the site. Add it to the press fact sheet once App Store
   Connect has assigned one.
 * **Game facts** used across the site: 5 realms (Forgotten Garden, Crystal Ocean, Sleeping

@@ -20,7 +20,7 @@
   <meta property="og:image" content="https://foldgame.app/assets/img/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="A paper crane above the words FOLD: Lumi's Paper World, on a soft pastel sky.">
+  <meta property="og:image:alt" content="Lumi, a small white spirit, sitting in a fold of paper beside the words FOLD: Lumi's Paper World, with floating islands behind.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Privacy Policy — FOLD: Lumi's Paper World">
   <meta name="twitter:description" content="FOLD collects no personal data. No ads, no analytics, no accounts and no third-party SDKs. Read the full privacy policy.">
@@ -85,12 +85,16 @@
       </radialGradient>
     </defs>
     <symbol id="lumi" viewBox="0 0 48 48">
-      <circle cx="24" cy="24" r="24" fill="url(#g-halo)"/>
-      <circle cx="24" cy="25" r="15" fill="url(#g-lumi)" stroke="#8FC3F2" stroke-opacity="0.55"/>
-      <ellipse cx="19" cy="24.5" rx="1.9" ry="2.9" fill="#3A3760"/>
-      <ellipse cx="29" cy="24.5" rx="1.9" ry="2.9" fill="#3A3760"/>
-      <ellipse cx="15.2" cy="29.5" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.8"/>
-      <ellipse cx="32.8" cy="29.5" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.8"/>
+      <circle cx="24" cy="25" r="23" fill="url(#g-halo)"/>
+      <path d="M9.5 24 L3.5 20.5 L8.5 29 Z" fill="#F8DE8C"/>
+      <path d="M38.5 24 L44.5 20.5 L39.5 29 Z" fill="#F8DE8C"/>
+      <path d="M26 5 C 30 13, 39.5 19, 39.5 28.5 A 15.5 14.5 0 0 1 8.5 28.5 C 8.5 20, 19 14.5, 26 5 Z" fill="url(#g-lumi)" stroke="#9CC6F0" stroke-opacity="0.6"/>
+      <ellipse cx="18.8" cy="27" rx="2.3" ry="3.2" fill="#34325C"/>
+      <ellipse cx="29.2" cy="27" rx="2.3" ry="3.2" fill="#34325C"/>
+      <circle cx="19.5" cy="25.8" r="0.8" fill="#fff"/>
+      <circle cx="29.900" cy="25.8" r="0.8" fill="#fff"/>
+      <ellipse cx="14.2" cy="32" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.85"/>
+      <ellipse cx="33.8" cy="32" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.85"/>
     </symbol>
     <symbol id="gl-b" viewBox="-20 -20 40 40"><path d="M0 -13 C 6 -4, 10 1, 10 6 A 10 10 0 1 1 -10 6 C -10 1, -6 -4, 0 -13 Z" fill="#fff"/></symbol>
     <symbol id="gl-p" viewBox="-20 -20 40 40"><path transform="rotate(35)" d="M0 -14 C 10 -5, 10 7, 0 14 C -10 7, -10 -5, 0 -14 Z" fill="#fff"/></symbol>
@@ -135,10 +139,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="../" aria-label="FOLD home">
-        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="14" fill="url(#g-mark)"/>
-          <use href="#crane" x="8" y="13" width="48" height="37" style="--o-1:#FFFFFF;--o-2:#F3EEF9;--o-3:#E4DAF1;--o-4:#B9ADCB;--o-5:#8E82A6"/>
-        </svg>
+        <img class="brand-mark" src="../assets/img/favicon-192.png" width="32" height="32" alt="">
         <span class="brand-name">FOLD</span>
       </a>
       <nav class="site-nav" aria-label="Main">
@@ -157,7 +158,7 @@
         <p class="eyebrow">Privacy</p>
         <h1>Privacy Policy</h1>
         <p class="lead">FOLD does not collect your data. This page explains exactly what that means, in plain language.</p>
-        <p class="page-meta">Effective date: <time datetime="2026-11-18">18 November 2026</time></p>
+        <p class="page-meta">Effective date: <time datetime="2026-11-19">19 November 2026</time></p>
       </div>
     </section>
 
@@ -170,9 +171,7 @@
             <li><a href="#scope">Who this policy covers</a></li>
             <li><a href="#collect">What we collect</a></li>
             <li><a href="#device">What stays on your device</a></li>
-            <li><a href="#icloud">iCloud</a></li>
-            <li><a href="#game-center">Game Center</a></li>
-            <li><a href="#notifications">Notifications</a></li>
+            <li><a href="#notifications">Daily reminder</a></li>
             <li><a href="#apple">Information from Apple</a></li>
             <li><a href="#children">Children's privacy</a></li>
             <li><a href="#website">This website</a></li>
@@ -189,9 +188,9 @@
             <ul>
               <li>FOLD collects <strong>no personal data</strong>. None.</li>
               <li>There are no ads, no analytics, no tracking and no third-party SDKs in the game.</li>
-              <li>There is no account. Your progress is saved on your iPhone and, if you use iCloud, in your own private iCloud.</li>
-              <li>Game Center and the daily reminder are optional, stay off until you turn them on, and are handled by Apple on your device.</li>
-              <li>The game never needs an internet connection.</li>
+              <li>There is no account. Your progress is saved on your iPhone and nowhere else.</li>
+              <li>The game makes no network requests at all. It works fully offline.</li>
+              <li>The only optional extra is a gentle daily reminder, which stays off until you turn it on and is scheduled on your own device.</li>
             </ul>
           </section>
 
@@ -209,7 +208,8 @@
             <li>no in-app purchases;</li>
             <li>no servers operated by us.</li>
           </ul>
-          <p>FOLD works fully offline. Nothing you do in the game is sent to us, and we do not track you across apps or websites.</p>
+          <p>FOLD makes no network requests and works fully offline. Nothing you do in the game is sent to us or to anyone else, and we do not track you across apps or websites.</p>
+          <p>The Settings screen contains a few links: to this website, to the composer's website and to the music licence. They open in your browser, and only if you tap them.</p>
 
           <h2 id="device">What stays on your device</h2>
           <p>To remember where you are, FOLD saves a small amount of information on your iPhone:</p>
@@ -219,16 +219,9 @@
             <li><strong>Simple play statistics:</strong> for example the number of folds you have made, hints used and time spent folding. These are used only inside the game, to show your journey and to gently adjust the difficulty of generated puzzles.</li>
           </ul>
           <p>This information stays on your device. We cannot see it. You can erase it at any time by choosing <strong>Reset all progress</strong> in the game's Settings, or by deleting the app.</p>
+          <p>Like the data of most apps, FOLD's saved game is included in the backups you make of your own iPhone, for example an iCloud Backup or a backup on your computer. Those backups belong to you and are handled by Apple under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>. We have no access to them. FOLD itself does not sync anything to iCloud or to any other service.</p>
 
-          <h2 id="icloud">iCloud</h2>
-          <p>If iCloud is turned on for FOLD on your device, your saved progress may also be stored in your own private iCloud storage, so that it can be restored when you reinstall the game or move to a new iPhone. Like the data of most apps, it may also be included in backups of your device.</p>
-          <p>This storage is provided by Apple under your Apple Account and is covered by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>. We have no access to it. You can turn iCloud off for FOLD, or delete this data, in the iPhone Settings app under your name, then iCloud.</p>
-
-          <h2 id="game-center">Game Center (optional)</h2>
-          <p>FOLD can connect to Apple's Game Center so that your achievements appear in your Game Center profile. This is off until you choose <strong>Connect Game Center</strong> in the game's Settings.</p>
-          <p>If you connect, the game reports the achievements you earn to Game Center. Game Center is operated by Apple and covered by Apple's Privacy Policy. Your Game Center profile, friends and activity are managed by Apple, not by us, and we do not receive or store your Game Center identity on any server. You can sign out of Game Center, or change what it shares, in the iPhone Settings app.</p>
-
-          <h2 id="notifications">Notifications (optional)</h2>
+          <h2 id="notifications">Daily reminder (optional)</h2>
           <p>FOLD can show one gentle reminder a day about the Daily Discovery. This is off until you turn on <strong>Gentle daily reminder</strong> in the game's Settings, at which point iOS asks for your permission.</p>
           <p>The reminder is a local notification. It is scheduled on your own device by iOS and does not use a server, a push notification service or any identifier. You can turn it off at any time in the game's Settings or in the iPhone Settings app.</p>
 
@@ -247,11 +240,11 @@
           <p>If you email us for support, we receive your email address and whatever you choose to include in your message. We use it only to reply to you and to fix the problem you describe. We do not add you to any mailing list, and we delete support correspondence when it is no longer needed. Please do not send sensitive personal information.</p>
 
           <h2 id="rights">Your choices and rights</h2>
-          <p>Because the game does not collect personal data, there is nothing for us to access, correct, export or delete on your behalf. Everything FOLD saves is on your own device or in your own iCloud, where you are in control of it:</p>
+          <p>Because the game does not collect personal data, there is nothing for us to access, correct, export or delete on your behalf. Everything FOLD saves is on your own device, where you are in control of it:</p>
           <ul>
             <li>choose <strong>Reset all progress</strong> in the game's Settings to erase your saved game;</li>
             <li>delete the app to remove everything it stored on your iPhone;</li>
-            <li>manage or delete iCloud data in the iPhone Settings app.</li>
+            <li>manage or delete your own device backups in the iPhone Settings app.</li>
           </ul>
           <p>If you have emailed us and would like that correspondence deleted, tell us and we will delete it. Depending on where you live, you may have further rights under laws such as the GDPR or the CCPA. You can exercise them by contacting us.</p>
 
@@ -273,10 +266,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="../" aria-label="FOLD home">
-            <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-              <rect width="64" height="64" rx="14" fill="url(#g-mark)"/>
-              <use href="#crane" x="8" y="13" width="48" height="37" style="--o-1:#FFFFFF;--o-2:#F3EEF9;--o-3:#E4DAF1;--o-4:#B9ADCB;--o-5:#8E82A6"/>
-            </svg>
+            <img class="brand-mark" src="../assets/img/favicon-192.png" width="32" height="32" alt="">
             <span class="brand-name">FOLD</span>
           </a>
           <p>FOLD: Lumi's Paper World is a calm origami puzzle journey for iPhone. Free, offline and quiet by design.</p>
@@ -301,8 +291,8 @@
         </nav>
       </div>
       <div class="footer-base">
-        <p>© 2026 FOLD. This site uses no cookies, no trackers and no analytics.</p>
-        <p>Apple, iPhone, App Store, Game Center and iCloud are trademarks of Apple Inc.</p>
+        <p>© 2026 Sadra Makhmali. This site uses no cookies, no trackers and no analytics.</p>
+        <p>Apple, iPhone, iCloud and App Store are trademarks of Apple Inc.</p>
       </div>
     </div>
   </footer>

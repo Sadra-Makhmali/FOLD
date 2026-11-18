@@ -918,7 +918,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
 }
 .cta h2 { margin-bottom: 0.4em; }
 .cta .lead { margin-inline: auto; margin-bottom: 1.6rem; }
-.cta-crane { width: clamp(120px, 22vw, 170px); margin: 0 auto 18px; filter: drop-shadow(0 14px 14px rgba(66, 67, 90, 0.22)); }
+.cta-art { width: min(100%, 560px); height: auto; margin: 0 auto 26px; border-radius: 22px; box-shadow: var(--shadow-m); }
 .cta-note { margin: 1.2rem 0 0; font-size: 0.93rem; color: var(--muted); }
 
 /* ---------- Inner pages ---------- */

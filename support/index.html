@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Support — FOLD: Lumi's Paper World</title>
-  <meta name="description" content="Help for FOLD: how to fold, hints and undo, restoring progress, accessibility options, Game Center, and how to report a bug or contact us.">
+  <meta name="description" content="Help for FOLD: how to fold, hints and undo, saving and restoring progress, accessibility options, the daily reminder, and how to report a bug.">
   <link rel="canonical" href="https://foldgame.app/support/">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#EAE4F5" media="(prefers-color-scheme: light)">
@@ -15,15 +15,15 @@
   <meta property="og:site_name" content="FOLD: Lumi's Paper World">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Support — FOLD: Lumi's Paper World">
-  <meta property="og:description" content="Help for FOLD: how to fold, hints and undo, restoring progress, accessibility options, Game Center, and how to report a bug or contact us.">
+  <meta property="og:description" content="Help for FOLD: how to fold, hints and undo, saving and restoring progress, accessibility options, the daily reminder, and how to report a bug.">
   <meta property="og:url" content="https://foldgame.app/support/">
   <meta property="og:image" content="https://foldgame.app/assets/img/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="A paper crane above the words FOLD: Lumi's Paper World, on a soft pastel sky.">
+  <meta property="og:image:alt" content="Lumi, a small white spirit, sitting in a fold of paper beside the words FOLD: Lumi's Paper World, with floating islands behind.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Support — FOLD: Lumi's Paper World">
-  <meta name="twitter:description" content="Help for FOLD: how to fold, hints and undo, restoring progress, accessibility options, Game Center, and how to report a bug or contact us.">
+  <meta name="twitter:description" content="Help for FOLD: how to fold, hints and undo, saving and restoring progress, accessibility options, the daily reminder, and how to report a bug.">
   <meta name="twitter:image" content="https://foldgame.app/assets/img/og-image.png">
 
   <link rel="icon" href="../favicon.ico" sizes="32x32">
@@ -85,12 +85,16 @@
       </radialGradient>
     </defs>
     <symbol id="lumi" viewBox="0 0 48 48">
-      <circle cx="24" cy="24" r="24" fill="url(#g-halo)"/>
-      <circle cx="24" cy="25" r="15" fill="url(#g-lumi)" stroke="#8FC3F2" stroke-opacity="0.55"/>
-      <ellipse cx="19" cy="24.5" rx="1.9" ry="2.9" fill="#3A3760"/>
-      <ellipse cx="29" cy="24.5" rx="1.9" ry="2.9" fill="#3A3760"/>
-      <ellipse cx="15.2" cy="29.5" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.8"/>
-      <ellipse cx="32.8" cy="29.5" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.8"/>
+      <circle cx="24" cy="25" r="23" fill="url(#g-halo)"/>
+      <path d="M9.5 24 L3.5 20.5 L8.5 29 Z" fill="#F8DE8C"/>
+      <path d="M38.5 24 L44.5 20.5 L39.5 29 Z" fill="#F8DE8C"/>
+      <path d="M26 5 C 30 13, 39.5 19, 39.5 28.5 A 15.5 14.5 0 0 1 8.5 28.5 C 8.5 20, 19 14.5, 26 5 Z" fill="url(#g-lumi)" stroke="#9CC6F0" stroke-opacity="0.6"/>
+      <ellipse cx="18.8" cy="27" rx="2.3" ry="3.2" fill="#34325C"/>
+      <ellipse cx="29.2" cy="27" rx="2.3" ry="3.2" fill="#34325C"/>
+      <circle cx="19.5" cy="25.8" r="0.8" fill="#fff"/>
+      <circle cx="29.900" cy="25.8" r="0.8" fill="#fff"/>
+      <ellipse cx="14.2" cy="32" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.85"/>
+      <ellipse cx="33.8" cy="32" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.85"/>
     </symbol>
     <symbol id="gl-b" viewBox="-20 -20 40 40"><path d="M0 -13 C 6 -4, 10 1, 10 6 A 10 10 0 1 1 -10 6 C -10 1, -6 -4, 0 -13 Z" fill="#fff"/></symbol>
     <symbol id="gl-p" viewBox="-20 -20 40 40"><path transform="rotate(35)" d="M0 -14 C 10 -5, 10 7, 0 14 C -10 7, -10 -5, 0 -14 Z" fill="#fff"/></symbol>
@@ -135,10 +139,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="../" aria-label="FOLD home">
-        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="14" fill="url(#g-mark)"/>
-          <use href="#crane" x="8" y="13" width="48" height="37" style="--o-1:#FFFFFF;--o-2:#F3EEF9;--o-3:#E4DAF1;--o-4:#B9ADCB;--o-5:#8E82A6"/>
-        </svg>
+        <img class="brand-mark" src="../assets/img/favicon-192.png" width="32" height="32" alt="">
         <span class="brand-name">FOLD</span>
       </a>
       <nav class="site-nav" aria-label="Main">
@@ -169,7 +170,7 @@
             <li><a href="#hints">Hints and undo</a></li>
             <li><a href="#progress">Saving and restoring progress</a></li>
             <li><a href="#accessibility">Accessibility</a></li>
-            <li><a href="#game-center">Game Center and reminders</a></li>
+            <li><a href="#reminder-group">Daily reminder and achievements</a></li>
             <li><a href="#about">About the game</a></li>
             <li><a href="#bugs">Reporting a bug</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -224,21 +225,16 @@
             <h2 id="progress-title">Saving and restoring progress</h2>
             <article class="faq" id="saving">
               <h3>Where is my progress saved?</h3>
-              <p>On your iPhone, automatically, as you play. There is no account to create. If iCloud is turned on for FOLD, your progress can also be kept in your own private iCloud.</p>
+              <p>On your iPhone, automatically, as you play. There is no account and nothing is sent anywhere: your saved game never leaves your device.</p>
             </article>
             <article class="faq" id="restoring">
-              <h3>How do I restore my progress on a new iPhone, or after reinstalling?</h3>
-              <ol>
-                <li>Sign in on the iPhone with the same Apple Account you used before.</li>
-                <li>Check that iCloud is turned on for FOLD: open the iPhone Settings app, tap your name, then iCloud, and look for FOLD among the apps that use iCloud.</li>
-                <li>Install FOLD and open it while connected to the internet. Your world should return after a moment.</li>
-              </ol>
-              <p>Restoring your iPhone from a backup also brings your progress back.</p>
-              <p>If iCloud was off for FOLD and there was no backup, progress that existed only on the old device cannot be recovered. We never receive your saved game, so we do not have a copy to give back.</p>
+              <h3>How do I move my progress to a new iPhone?</h3>
+              <p>FOLD's saved game is part of your iPhone's own backup. When you set up a new iPhone from a backup of the old one (an iCloud Backup, a backup on your computer, or a direct transfer between the two phones), your world comes with it.</p>
+              <p>This version of FOLD does not sync between devices on its own, so progress cannot be copied to a second device that was set up separately.</p>
             </article>
             <article class="faq" id="deleting">
               <h3>What happens if I delete the app?</h3>
-              <p>Deleting FOLD removes the progress stored on that iPhone. If your progress was also saved to iCloud or included in a backup, you can restore it as described above.</p>
+              <p>Deleting FOLD removes its saved progress from that iPhone. Installing it again starts a new world. The earlier progress can only come back by restoring the iPhone from a backup that was made before the app was deleted. We never receive your saved game, so we do not have a copy to give back.</p>
             </article>
             <article class="faq" id="reset">
               <h3>How do I start over?</h3>
@@ -266,20 +262,16 @@
             </article>
           </section>
 
-          <section class="faq-group" id="game-center" aria-labelledby="game-center-title">
-            <h2 id="game-center-title">Game Center and reminders</h2>
-            <article class="faq" id="gc-optional">
-              <h3>Do I need Game Center?</h3>
-              <p>No. Game Center is optional and stays off until you choose <strong>Connect Game Center</strong> in FOLD's Settings. Once connected, the achievements you earn in FOLD also appear in your Game Center profile. Game Center is run by Apple.</p>
-            </article>
-            <article class="faq" id="gc-disconnect">
-              <h3>How do I disconnect Game Center?</h3>
-              <p>Game Center sign-in is managed by iOS. Open the iPhone Settings app and choose Game Center to sign out or to change what it shares.</p>
-            </article>
+          <section class="faq-group" id="reminder-group" aria-labelledby="reminder-title">
+            <h2 id="reminder-title">Daily reminder and achievements</h2>
             <article class="faq" id="reminder">
               <h3>How do I turn the daily reminder on or off?</h3>
-              <p>Open Settings in FOLD and switch <strong>Gentle daily reminder</strong> on or off. The first time you turn it on, iOS asks for permission to show notifications.</p>
+              <p>Open Settings in FOLD and switch <strong>Gentle daily reminder</strong> on or off. It is off until you turn it on, and the first time you do, iOS asks for permission to show notifications.</p>
               <p>If the switch will not stay on, notifications for FOLD are probably turned off: open the iPhone Settings app, choose Notifications, then FOLD, and allow them. The reminder comes from your own device once a day. FOLD never sends anything else.</p>
+            </article>
+            <article class="faq" id="game-center">
+              <h3>Does FOLD use Game Center?</h3>
+              <p>Not in this version. Achievements are earned and kept inside the game, on your iPhone, and there are no leaderboards.</p>
             </article>
           </section>
 
@@ -291,7 +283,7 @@
             </article>
             <article class="faq" id="offline">
               <h3>Does FOLD need an internet connection?</h3>
-              <p>No. The story, the Endless Weave and the Daily Discovery all work offline. A connection is only used by features you switch on yourself that depend on Apple's services, such as Game Center or iCloud.</p>
+              <p>No. FOLD never connects to the internet. The story, the Endless Weave and the Daily Discovery all run on your iPhone.</p>
             </article>
             <article class="faq" id="devices">
               <h3>Which devices does FOLD support?</h3>
@@ -312,7 +304,7 @@
                 <li>what happened, and what you expected to happen;</li>
                 <li>where it happened: the realm and level name, or the Endless Weave, or the Daily Discovery and its date;</li>
                 <li>your iPhone model and iOS version (iPhone Settings, then General, then About);</li>
-                <li>your version of FOLD (iPhone Settings, then General, then iPhone Storage, then FOLD);</li>
+                <li>your version of FOLD (in FOLD, open Settings and look under About);</li>
                 <li>a screenshot or screen recording, if you can make one.</li>
               </ul>
               <p>Ideas and feedback are just as welcome as bug reports.</p>
@@ -335,10 +327,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="../" aria-label="FOLD home">
-            <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-              <rect width="64" height="64" rx="14" fill="url(#g-mark)"/>
-              <use href="#crane" x="8" y="13" width="48" height="37" style="--o-1:#FFFFFF;--o-2:#F3EEF9;--o-3:#E4DAF1;--o-4:#B9ADCB;--o-5:#8E82A6"/>
-            </svg>
+            <img class="brand-mark" src="../assets/img/favicon-192.png" width="32" height="32" alt="">
             <span class="brand-name">FOLD</span>
           </a>
           <p>FOLD: Lumi's Paper World is a calm origami puzzle journey for iPhone. Free, offline and quiet by design.</p>
@@ -363,8 +352,8 @@
         </nav>
       </div>
       <div class="footer-base">
-        <p>© 2026 FOLD. This site uses no cookies, no trackers and no analytics.</p>
-        <p>Apple, iPhone, App Store, Game Center and iCloud are trademarks of Apple Inc.</p>
+        <p>© 2026 Sadra Makhmali. This site uses no cookies, no trackers and no analytics.</p>
+        <p>Apple, iPhone, iCloud and App Store are trademarks of Apple Inc.</p>
       </div>
     </div>
   </footer>
