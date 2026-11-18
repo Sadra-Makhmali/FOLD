@@ -13,9 +13,11 @@ website/
   credits/index.html    credits and music attributions
   404.html              "page not found" (GitHub Pages serves it automatically)
   assets/css/site.css   all styles (light and dark theme, responsive, reduced motion)
-  assets/js/site.js     fold demo in the hero, gallery buttons, scroll reveal
+  assets/js/site.js     gallery buttons, scroll reveal
+  assets/js/play.js     the playable sheet in the hero and the island that wakes up
   assets/img/           app icon, favicons, Open Graph image
-  assets/screens/       screenshot slots 01.png … 06.png
+  assets/screens/       screenshots 01.png … 09.png (full size) and web/01.jpg … 09.jpg (shown on the pages)
+  assets/realms/        island art for the five realm cards
   CNAME                 custom domain for GitHub Pages (foldgame.app)
   publish.sh            sends this folder to GitHub Pages (not published itself)
   .nojekyll             tells GitHub Pages to publish the files as they are
@@ -58,24 +60,27 @@ records used for the website below.
 
 ### 2. Images
 
-| File | Size | Status now | What to supply |
-|---|---|---|---|
-| `assets/screens/01.png` | iPhone screenshot, portrait | labelled placeholder | **Fold**: a level being folded (The Forgotten Garden). |
-| `assets/screens/02.png` | same | labelled placeholder | **Match**: lights meeting after a fold. |
-| `assets/screens/03.png` | same | labelled placeholder | **Bloom**: the origami reveal after a solved level. |
-| `assets/screens/04.png` | same | labelled placeholder | **Rebuild**: the 3D world with restored landmarks. |
-| `assets/screens/05.png` | same | labelled placeholder | **Remember**: the realm map or the Memory Atlas. |
-| `assets/screens/06.png` | same | labelled placeholder | **Wander**: Endless Weave or Daily Discovery. |
-| `assets/img/app-icon.png` | 1024 × 1024 | copy of `FOLD/Assets.xcassets/AppIcon.appiconset/AppIcon.png` taken on 2026-11-18 | Replace if the icon changes. |
-| `assets/img/apple-touch-icon.png` | 180 × 180 | made from the same icon | Regenerate if the icon changes. |
-| `assets/img/favicon-192.png`, `favicon.ico` | 192 × 192, 32 × 32 | made from the same icon | Regenerate if the icon changes. |
-| `assets/img/og-image.png` | 1200 × 630 | generated share image (crane, title, tagline) | Optional: replace with final key art. Keep the size. |
+All images are real captures of the game, taken on 2026-11-19. Replace them when the game's look
+changes.
 
-Screenshots: keep the file names and use PNG. Any current iPhone portrait size works (for example
-1206 × 2622 or 1320 × 2868); the page crops to the same shape. The `alt` text and captions in
-`index.html` and `press/index.html` describe the scenes listed above, so keep that order or edit
-the text to match. Raw simulator screenshots are fine; do not add a device frame, the page draws
-rounded corners itself.
+| File | What it is | Source |
+|---|---|---|
+| `assets/screens/01.png` … `08.png` | Full-size screenshots (1320 × 2868), linked from the press kit | The App Store set made by the UI test `testStoreScreenshots` (`build/uitest-store/shots/`), in this order: `s01-fold`, `s03-origami`, `s02-world-garden`, `s06-ocean`, `s04-starlight`, `s05-world-observatory`, `s07-story`, `s08-world-archive` |
+| `assets/screens/09.png` | The Endless Weave screen (1206 × 2622) | Captured by hand in the simulator: home screen, then the infinity button |
+| `assets/screens/web/01.jpg` … `09.jpg` | The same nine at 804 × 1748, used by the gallery and the press kit thumbnails | Made from the PNGs (command below) |
+| `assets/realms/*.jpg` | Island art for the realm cards, 640 × 640 | Square crops of the island from the "world" screenshots of each realm |
+| `assets/img/app-icon.png` | 1024 × 1024 app icon | Copy of `FOLD/Assets.xcassets/AppIcon.appiconset/AppIcon.png` taken on 2026-11-18 |
+| `assets/img/apple-touch-icon.png`, `favicon-192.png`, `favicon.ico` | Small icons | Made from the app icon |
+| `assets/img/og-image.png` | 1200 × 630 share image (crane, title, tagline) | Generated for the site. Optional: replace with final key art, same size |
+
+The gallery captions and `alt` texts in `index.html` and `press/index.html` describe these nine
+scenes in this order. If a screenshot shows something else, edit the text to match.
+
+Refresh the web-size screenshots after replacing a PNG:
+
+```bash
+for n in 01 02 03 04 05 06 07 08 09; do sips -s format jpeg -s formatOptions 84 -Z 1748 assets/screens/$n.png --out assets/screens/web/$n.jpg; done
+```
 
 Regenerate the small icons after replacing `app-icon.png`:
 
@@ -103,9 +108,11 @@ sips -Z 192 assets/img/app-icon.png --out assets/img/favicon-192.png
 
 ### 4. Music credits
 
-`credits/index.html` has an empty table (Track, Composer, Licence, Link) with one placeholder
-row, "Music credits will be listed here." A commented template row sits just above the table:
-copy it once per track and delete the placeholder row.
+`credits/index.html` lists the five tracks that ship in the game (Amberlight, Life in Silico,
+Meanwhile, Cobalt, With These Hands, all by Scott Buckley under CC BY 4.0), with a link to each
+track and the credit lines in the form the composer asks for. Keep it in step with the Music
+section of the game's Settings. If a track is ever trimmed or looped, add "(edited)" to its line,
+as the licence requires.
 
 ### 5. Facts to confirm against the shipped app
 
@@ -118,9 +125,15 @@ The pages state these as facts. Please check them against the final build:
   restore progress either way).
 * **Age rating.** Not stated anywhere on the site. Add it to the press fact sheet once App Store
   Connect has assigned one.
-* **Game facts** used across the site: 3 realms, 45 story puzzles, 12 chapters, Endless Weave
-  expeditions of five puzzles, six puzzle flavours, a Daily Discovery, unlimited hints and undo,
-  the accessibility switches named in Settings, iPhone only, iOS 26 or later, English only.
+* **Game facts** used across the site: 5 realms (Forgotten Garden, Crystal Ocean, Sleeping
+  Forest, Celestial Observatory, Infinite Archive), 100 story puzzles, 25 chapters, Endless Weave
+  expeditions of five puzzles, seven puzzle flavours, starlight, a Daily Discovery, unlimited
+  hints and undo, the accessibility switches named in Settings, music by Scott Buckley, iPhone
+  only, iOS 26 or later, English only.
+* **The playable sheet** on the home page uses four real levels from `Campaign.json`: `garden-01`
+  First Light, `garden-02` Bending Down, `garden-06` Petal Chain and `garden-07` Four Corners,
+  with their in-game hints and origami names. They are copied into the `LEVELS` list at the top
+  of `assets/js/play.js`; if those levels change in the game, change them there too.
 
 ## App Store badge
 
@@ -246,6 +259,11 @@ The first should list the four `185.199.x.153` addresses, the second the CNAME t
 * Colours are CSS variables at the top of `assets/css/site.css`, with the dark theme in the
   `prefers-color-scheme: dark` block right below. The site follows the visitor's system theme and
   their "reduce motion" setting.
+* The playable sheet (`assets/js/play.js`) follows the game's rules: a fold moves everything on
+  one side of a crease, the sheet cannot leave the frame, and lights of one colour that land on
+  each other join. It keeps its state in memory only. Each solved sheet restores one landmark
+  of the island drawing in the "world" section (`data-landmark` and `data-origami` in
+  `index.html`). People who do not drag can use "Fold from a list" under the sheet.
 * The site stores nothing in the browser and loads nothing from other servers. The privacy
   policy says so; keep it true if you add anything.
 * This README is published with the site (as `/README.md`). It is harmless and hidden from

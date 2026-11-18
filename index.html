@@ -35,6 +35,7 @@
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="stylesheet" href="assets/css/site.css">
   <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/play.js" defer></script>
 
   <script type="application/ld+json">
   {
@@ -96,6 +97,62 @@
       <polygon points="400,565 512,538 512,728" fill="var(--o-1)"/>
       <polygon points="512,538 630,565 512,728" fill="var(--o-4)"/>
     </symbol>
+    <defs>
+      <radialGradient id="g-lumi" cx="0.4" cy="0.35" r="0.75">
+        <stop offset="0" stop-color="#FFFFFF"/>
+        <stop offset="1" stop-color="#A9D6FF"/>
+      </radialGradient>
+      <radialGradient id="g-halo">
+        <stop offset="0.45" stop-color="#BFE6FF" stop-opacity="0.75"/>
+        <stop offset="1" stop-color="#BFE6FF" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <symbol id="lumi" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="24" fill="url(#g-halo)"/>
+      <circle cx="24" cy="25" r="15" fill="url(#g-lumi)" stroke="#8FC3F2" stroke-opacity="0.55"/>
+      <ellipse cx="19" cy="24.5" rx="1.9" ry="2.9" fill="#3A3760"/>
+      <ellipse cx="29" cy="24.5" rx="1.9" ry="2.9" fill="#3A3760"/>
+      <ellipse cx="15.2" cy="29.5" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.8"/>
+      <ellipse cx="32.8" cy="29.5" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.8"/>
+    </symbol>
+    <symbol id="gl-b" viewBox="-20 -20 40 40"><path d="M0 -13 C 6 -4, 10 1, 10 6 A 10 10 0 1 1 -10 6 C -10 1, -6 -4, 0 -13 Z" fill="#fff"/></symbol>
+    <symbol id="gl-p" viewBox="-20 -20 40 40"><path transform="rotate(35)" d="M0 -14 C 10 -5, 10 7, 0 14 C -10 7, -10 -5, 0 -14 Z" fill="#fff"/></symbol>
+    <symbol id="gl-y" viewBox="-20 -20 40 40"><polygon points="0,-14 3.6,-4.9 13.3,-4.3 5.8,1.8 8.2,11.3 0,6 -8.2,11.3 -5.8,1.8 -13.3,-4.3 -3.6,-4.9" fill="#fff"/></symbol>
+    <symbol id="gl-g" viewBox="-20 -20 40 40"><path d="M-11 11 C -13 -4, -2 -14, 12 -12 C 14 2, 4 13, -11 11 Z" fill="#fff"/><path d="M-8 8 L 5 -5" stroke="#000" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="gl-v" viewBox="-20 -20 40 40"><path d="M5 -13 A 13.5 13.5 0 1 0 13 6 A 10.5 10.5 0 0 1 5 -13 Z" fill="#fff"/></symbol>
+    <symbol id="o-crane" viewBox="140 190 710 550"><use href="#crane" x="140" y="190" width="710" height="550"/></symbol>
+    <symbol id="o-butterfly" viewBox="0 0 200 160">
+      <polygon points="22,22 98,74 56,98" fill="#A18AF2"/>
+      <polygon points="22,22 98,74 76,34" fill="#C6B8FF"/>
+      <polygon points="178,22 102,74 144,98" fill="#8F78E8"/>
+      <polygon points="178,22 102,74 124,34" fill="#B3A2F5"/>
+      <polygon points="98,84 42,142 86,128" fill="#BBAAF7"/>
+      <polygon points="102,84 158,142 114,128" fill="#9A86EE"/>
+      <polygon points="100,58 93,98 100,144" fill="#F6F3FF"/>
+      <polygon points="100,58 107,98 100,144" fill="#D5CCF0"/>
+    </symbol>
+    <symbol id="o-lotus" viewBox="0 0 200 160">
+      <polygon points="14,100 72,90 86,124 40,128" fill="#F9C9DD"/>
+      <polygon points="186,100 128,90 114,124 160,128" fill="#F2A9C8"/>
+      <polygon points="40,90 90,54 86,120" fill="#F6B6D2"/>
+      <polygon points="160,90 110,54 114,120" fill="#EE9DC0"/>
+      <polygon points="100,28 70,104 100,130" fill="#FBD6E6"/>
+      <polygon points="100,28 130,104 100,130" fill="#EF8DB8"/>
+      <polygon points="40,128 100,128 100,148 70,148" fill="#7BD6B1"/>
+      <polygon points="100,128 160,128 130,148 100,148" fill="#4FB892"/>
+    </symbol>
+    <symbol id="o-star" viewBox="0 0 200 160">
+      <polygon points="100,80 100,14 116.5,57.3" fill="#FBD98A"/>
+      <polygon points="100,80 116.5,57.3 162.800,59.600" fill="#E9A93A"/>
+      <polygon points="100,80 162.800,59.600 126.600,88.700" fill="#FBD98A"/>
+      <polygon points="100,80 126.600,88.700 138.800,133.400" fill="#E9A93A"/>
+      <polygon points="100,80 138.800,133.400 100,108" fill="#FBD98A"/>
+      <polygon points="100,80 100,108 61.200,133.400" fill="#E9A93A"/>
+      <polygon points="100,80 61.200,133.400 73.400,88.700" fill="#FBD98A"/>
+      <polygon points="100,80 73.400,88.700 37.200,59.600" fill="#E9A93A"/>
+      <polygon points="100,80 37.200,59.600 83.5,57.3" fill="#FBD98A"/>
+      <polygon points="100,80 83.5,57.3 100,14" fill="#E9A93A"/>
+    </symbol>
   </svg>
 
   <header class="site-header">
@@ -135,7 +192,7 @@
               </svg>
               <span class="store-badge-text"><small>Coming soon</small><strong>on the App Store</strong></span>
             </a>
-            <a class="btn btn-ghost" href="#how">See how it plays</a>
+            <a class="btn btn-ghost" href="#play">Try a puzzle</a>
           </div>
           <ul class="chips" aria-label="At a glance">
             <li style="--dot: var(--green)">Free</li>
@@ -145,44 +202,75 @@
           </ul>
         </div>
 
-        <div class="fold-demo" data-fold-demo data-state="flat">
-          <div class="fold-stage" data-fold-stage aria-hidden="true">
-            <div class="fold-halo"></div>
-            <div class="sheet">
-              <div class="sheet-frame"></div>
-              <div class="half half-right">
-                <div class="face">
-                  <span class="node" style="--x:75;--y:12.5;--c:var(--blue)"></span>
-                  <span class="node" style="--x:25;--y:62.5;--c:var(--pink)"></span>
-                  <span class="node" style="--x:75;--y:87.5;--c:var(--gold)"></span>
-                  <span class="bloom" style="--x:75;--y:12.5;--c:var(--blue);--d:0.16s"></span>
-                  <span class="bloom" style="--x:25;--y:62.5;--c:var(--pink);--d:0s"></span>
-                  <span class="bloom" style="--x:75;--y:87.5;--c:var(--gold);--d:0.32s"></span>
-                </div>
-              </div>
-              <div class="half half-left">
-                <div class="face face-front">
-                  <span class="node" style="--x:25;--y:12.5;--c:var(--blue)"></span>
-                  <span class="node" style="--x:75;--y:62.5;--c:var(--pink)"></span>
-                  <span class="node" style="--x:25;--y:87.5;--c:var(--gold)"></span>
-                </div>
-                <div class="face face-back">
-                  <span class="node" style="--x:75;--y:12.5;--c:var(--blue)"></span>
-                  <span class="node" style="--x:25;--y:62.5;--c:var(--pink)"></span>
-                  <span class="node" style="--x:75;--y:87.5;--c:var(--gold)"></span>
-                </div>
+        <div class="play" id="play" data-play>
+          <div class="play-head">
+            <div class="play-title">
+              <p class="play-realm">The Forgotten Garden</p>
+              <p class="play-name" data-play-name>First Light</p>
+              <ol class="play-steps" data-play-steps aria-label="Puzzle 1 of 4"><li aria-current="step"></li><li></li><li></li><li></li></ol>
+            </div>
+            <button class="icon-btn play-hint js-only" type="button" data-play-hint aria-label="Show a hint">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.800c.6.500 1 1.200 1 2v.200h5.200v-.200c0-.800.400-1.500 1-2A6 6 0 0 0 12 3Z"/></svg>
+            </button>
+          </div>
+          <p class="play-lumi">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#lumi"/></svg>
+            <span data-play-tip>Drag one side of the paper over the other so the two lights touch.</span>
+          </p>
+          <div class="play-stage" data-play-stage>
+            <div class="pz-board" data-play-board aria-hidden="true" style="aspect-ratio: 4 / 3; width: 100%">
+              <div class="pz-frame"></div>
+              <div class="pz-sheet">
+                <div class="pz-tile" data-layers="1" style="left:0%;top:0.0000%;width:25%;height:33.3333%"></div>
+                <div class="pz-tile" data-layers="1" style="left:25%;top:0.0000%;width:25%;height:33.3333%"></div>
+                <div class="pz-tile" data-layers="1" style="left:50%;top:0.0000%;width:25%;height:33.3333%"></div>
+                <div class="pz-tile" data-layers="1" style="left:75%;top:0.0000%;width:25%;height:33.3333%"></div>
+                <div class="pz-tile" data-layers="1" style="left:0%;top:33.3333%;width:25%;height:33.3333%"><div class="pz-orbs" data-n="1"><span class="pz-orb" data-c="b"><svg viewBox="-20 -20 40 40" aria-hidden="true"><use href="#gl-b" x="-20" y="-20" width="40" height="40"/></svg></span></div></div>
+                <div class="pz-tile" data-layers="1" style="left:25%;top:33.3333%;width:25%;height:33.3333%"></div>
+                <div class="pz-tile" data-layers="1" style="left:50%;top:33.3333%;width:25%;height:33.3333%"></div>
+                <div class="pz-tile" data-layers="1" style="left:75%;top:33.3333%;width:25%;height:33.3333%"><div class="pz-orbs" data-n="1"><span class="pz-orb" data-c="b"><svg viewBox="-20 -20 40 40" aria-hidden="true"><use href="#gl-b" x="-20" y="-20" width="40" height="40"/></svg></span></div></div>
+                <div class="pz-tile" data-layers="1" style="left:0%;top:66.6667%;width:25%;height:33.3333%"></div>
+                <div class="pz-tile" data-layers="1" style="left:25%;top:66.6667%;width:25%;height:33.3333%"></div>
+                <div class="pz-tile" data-layers="1" style="left:50%;top:66.6667%;width:25%;height:33.3333%"></div>
+                <div class="pz-tile" data-layers="1" style="left:75%;top:66.6667%;width:25%;height:33.3333%"></div>
               </div>
             </div>
-            <svg class="demo-crane" viewBox="0 0 710 550"><use href="#crane" width="710" height="550"/></svg>
+            <div class="play-reveal" data-play-reveal hidden>
+              <div class="play-rays" aria-hidden="true"></div>
+              <svg class="play-art" viewBox="0 0 200 160" aria-hidden="true"><use data-play-art href="#o-crane" width="200" height="160"/></svg>
+              <p class="play-art-name" data-play-art-name>Paper Crane</p>
+              <p class="play-art-sub">joins The Forgotten Garden</p>
+              <p class="play-art-blurb" data-play-art-blurb></p>
+              <ul class="play-tags">
+                <li data-play-folds>1 / 1 fold</li>
+                <li data-play-perfect>Perfect</li>
+                <li data-play-landmark>Ancient Bridge restored</li>
+              </ul>
+              <p class="play-finale" data-play-finale hidden>That was the first few minutes. The game goes on through five realms and 100 puzzles.</p>
+              <div class="play-actions">
+                <a class="btn btn-ghost" href="#world">World</a>
+                <button class="btn btn-primary" type="button" data-play-next>Next</button>
+              </div>
+            </div>
           </div>
-          <button class="btn btn-primary js-only" type="button" data-fold-button>
-            <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 4.5h8.5l5.5 5.5v5.5H3z"/><path d="M11.5 4.5V10H17"/>
-            </svg>
-            <span data-fold-label>Fold the sheet</span>
-          </button>
-          <p class="demo-caption">Three pairs of lights, one fold. Try it.</p>
-          <p class="visually-hidden" role="status" aria-live="polite" data-fold-status></p>
+          <p class="visually-hidden" data-play-describe>Puzzle 1 of 4, First Light. The frame is 4 columns by 3 rows. Lights: blue at column 1, row 2; blue at column 4, row 2.</p>
+          <p class="visually-hidden" role="status" aria-live="polite" data-play-status></p>
+          <p class="play-goal"><span>Connect every light</span><span data-play-count>0 folds · par 1</span></p>
+          <div class="play-controls js-only">
+            <button class="btn btn-ghost" type="button" data-play-undo disabled>
+              <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 3 8l4 4"/><path d="M3 8h8.500a4.500 4.500 0 0 1 0 9H8"/></svg>
+              Undo
+            </button>
+            <button class="btn btn-ghost" type="button" data-play-restart disabled>
+              <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10a6 6 0 1 0 2-4.500"/><path d="M4 3v3.500h3.500"/></svg>
+              Restart
+            </button>
+          </div>
+          <details class="play-list js-only">
+            <summary>Fold from a list</summary>
+            <p>Every fold that is possible right now, for playing without dragging.</p>
+            <ul data-play-moves></ul>
+          </details>
         </div>
       </div>
       <div class="hero-fade"></div>
@@ -284,40 +372,68 @@
           </div>
         </article>
 
-        <article class="feature flip" data-reveal>
-          <div class="feature-art">
-            <svg viewBox="0 0 480 360" role="img" aria-label="A floating island with a sakura tree, a small temple and a bridge. Paper cranes circle above it and a small glowing spirit hovers nearby.">
-              <ellipse cx="96" cy="78" rx="46" ry="15" fill="var(--cloud)"/><ellipse cx="128" cy="68" rx="30" ry="13" fill="var(--cloud)"/>
-              <ellipse cx="400" cy="262" rx="40" ry="13" fill="var(--cloud)"/>
-              <polygon points="96,214 130,238 220,246 360,236 392,204 330,288 250,330 170,292" fill="#B9AED0"/>
-              <polygon points="130,238 220,246 250,330 170,292" fill="#A99DC2"/>
-              <polygon points="220,246 360,236 330,288 250,330" fill="#9388AE"/>
-              <polygon points="96,214 170,186 300,180 392,204 360,236 220,246 130,238" fill="#BFE5CF"/>
-              <polygon points="170,186 300,180 268,212 196,214" fill="#D6F0E0"/>
-              <path d="M118 216 Q150 184 184 206" fill="none" stroke="#E88BB4" stroke-width="7" stroke-linecap="round"/>
-              <path d="M118 216 Q150 196 184 206" fill="none" stroke="#C96C99" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-              <polygon points="232,216 245,216 242,158 236,158" fill="#8C7B8E"/>
-              <polygon points="238,92 284,130 264,170 212,170 194,128" fill="#F6B6D2"/>
-              <polygon points="238,92 284,130 240,138" fill="#FBD3E4"/>
-              <polygon points="194,128 240,138 212,170" fill="#EE9DC0"/>
-              <rect x="318" y="192" width="34" height="22" fill="#F4F2F7"/><rect x="330" y="200" width="10" height="14" fill="#B9AED0"/>
-              <polygon points="306,192 364,192 335,170" fill="#E88BB4"/>
-              <rect x="324" y="160" width="22" height="10" fill="#F4F2F7"/>
-              <polygon points="314,160 356,160 335,142" fill="#F26BAA"/>
-              <circle cx="288" cy="112" r="34" fill="url(#g-glow)"/>
-              <circle cx="288" cy="112" r="11" fill="#fff"/>
-              <circle cx="284.5" cy="111" r="1.6" fill="#42435A"/><circle cx="291.5" cy="111" r="1.6" fill="#42435A"/>
-              <use href="#crane" x="340" y="44" width="104" height="80"/>
-              <use href="#crane" x="58" y="118" width="62" height="48" opacity="0.9"/>
-              <path d="M70 300 C 110 290, 132 272, 150 250" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-dasharray="2 9" stroke-linecap="round"/>
-              <circle cx="62" cy="302" r="7" fill="#F5BE54"/>
+        <article class="feature flip" id="world" data-reveal>
+          <div class="feature-art world-art" data-world>
+            <svg viewBox="0 0 480 380" role="img" aria-label="A floating garden island with a red bridge, a sakura tree, lanterns and a temple. Origami figures fly around it and a small glowing spirit watches.">
+              <ellipse cx="86" cy="70" rx="44" ry="14" fill="var(--cloud)"/><ellipse cx="116" cy="60" rx="28" ry="12" fill="var(--cloud)"/>
+              <ellipse cx="412" cy="300" rx="38" ry="12" fill="var(--cloud)"/>
+              <path d="M52 236 C 96 300, 384 300, 428 236 C 420 300, 330 350, 240 356 C 150 350, 60 300, 52 236 Z" fill="#F3DCC8"/>
+              <path d="M98 290 C 160 326, 320 326, 382 290 C 350 338, 290 360, 240 362 C 190 360, 130 338, 98 290 Z" fill="#E9C3D6"/>
+              <path d="M168 340 C 200 352, 280 352, 312 340 C 292 368, 262 380, 240 380 C 218 380, 188 368, 168 340 Z" fill="#C9BCE8"/>
+              <ellipse cx="240" cy="244" rx="188" ry="60" fill="#8FCFAE"/>
+              <ellipse cx="240" cy="234" rx="188" ry="60" fill="#A9DFC0"/>
+              <ellipse cx="206" cy="222" rx="128" ry="34" fill="#BFE9CF"/>
+              <ellipse cx="322" cy="252" rx="62" ry="20" fill="#8CCBF0"/>
+              <ellipse cx="310" cy="248" rx="30" ry="8" fill="#B9E2FA"/>
+              <g class="lm" data-landmark="temple">
+                <rect x="226" y="196" width="60" height="26" fill="#EDE8FB"/>
+                <rect x="250" y="204" width="12" height="18" fill="#6F5BC9"/>
+                <polygon points="214,198 298,198 284,182 228,182" fill="#8F78E8"/>
+                <rect x="234" y="164" width="44" height="18" fill="#EDE8FB"/>
+                <polygon points="224,166 288,166 276,152 236,152" fill="#A18AF2"/>
+                <rect x="242" y="138" width="28" height="14" fill="#EDE8FB"/>
+                <polygon points="232,140 280,140 256,116" fill="#8F78E8"/>
+                <line x1="256" y1="116" x2="256" y2="104" stroke="#F5BE54" stroke-width="3" stroke-linecap="round"/>
+              </g>
+              <g class="lm" data-landmark="tree">
+                <path d="M132 238 C 138 214, 140 196, 146 172 L 158 174 C 154 198, 152 216, 150 238 Z" fill="#9C7B6E"/>
+                <polygon points="118,118 150,100 180,118 180,150 150,168 118,150" fill="#F6B6D2"/>
+                <polygon points="118,118 150,100 150,134" fill="#FBD3E4"/>
+                <polygon points="150,134 180,118 180,150 150,168" fill="#EE9DC0"/>
+                <polygon points="88,146 112,132 136,146 136,170 112,184 88,170" fill="#F9C4DB"/>
+                <polygon points="112,158 136,146 136,170 112,184" fill="#F0A6C6"/>
+                <polygon points="166,148 190,134 214,148 214,172 190,186 166,172" fill="#F9C4DB"/>
+                <polygon points="190,160 214,148 214,172 190,186" fill="#F0A6C6"/>
+              </g>
+              <g class="lm" data-landmark="bridge">
+                <path d="M262 252 Q 322 198 382 252" fill="none" stroke="#E0625F" stroke-width="9" stroke-linecap="round"/>
+                <g stroke="#E0625F" stroke-width="4" stroke-linecap="round"><line x1="282" y1="237" x2="282" y2="222"/><line x1="302" y1="228" x2="302" y2="212"/><line x1="322" y1="225" x2="322" y2="208"/><line x1="342" y1="228" x2="342" y2="212"/><line x1="362" y1="237" x2="362" y2="222"/></g>
+                <path d="M282 222 Q 322 196 362 222" fill="none" stroke="#E0625F" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M266 252 Q 322 208 378 252" fill="none" stroke="#F6C1B4" stroke-width="2.5" stroke-linecap="round"/>
+              </g>
+              <g class="lm" data-landmark="lanterns">
+                <circle cx="198" cy="198" r="24" fill="url(#g-glow)" opacity="0.6"/>
+                <line x1="196" y1="236" x2="198" y2="212" stroke="#C9973A" stroke-width="1.5"/>
+                <ellipse cx="198" cy="198" rx="10" ry="13" fill="#F8D879"/><rect x="193" y="183" width="10" height="4" rx="1" fill="#C9973A"/><rect x="193" y="209" width="10" height="4" rx="1" fill="#C9973A"/>
+                <line x1="92" y1="244" x2="94" y2="226" stroke="#C9973A" stroke-width="1.5"/>
+                <ellipse cx="94" cy="215" rx="8" ry="10.5" fill="#F7B3C8"/><rect x="90" y="203" width="8" height="3.5" rx="1" fill="#C9973A"/><rect x="90" y="224" width="8" height="3.5" rx="1" fill="#C9973A"/>
+                <line x1="404" y1="232" x2="406" y2="214" stroke="#C9973A" stroke-width="1.5"/>
+                <ellipse cx="406" cy="203" rx="8" ry="10.5" fill="#F8D879"/><rect x="402" y="191" width="8" height="3.5" rx="1" fill="#C9973A"/><rect x="402" y="212" width="8" height="3.5" rx="1" fill="#C9973A"/>
+              </g>
+              <g class="og" data-origami="lotus"><use href="#o-lotus" x="298" y="232" width="50" height="40"/></g>
+              <g class="og" data-origami="crane"><use href="#crane" x="352" y="44" width="96" height="74"/></g>
+              <g class="og" data-origami="butterfly"><use href="#o-butterfly" x="40" y="104" width="60" height="48"/></g>
+              <g class="og" data-origami="star"><use href="#o-star" x="296" y="70" width="44" height="35"/></g>
+              <use href="#lumi" x="388" y="126" width="48" height="48"/>
             </svg>
+            <p class="world-count js-only" data-world-count aria-live="polite"></p>
           </div>
           <div class="feature-copy">
             <p class="eyebrow">The world</p>
             <h3>Every solved sheet becomes origami</h3>
-            <p>The sheet you just folded does not vanish. It gathers itself into a crane, a boat, a lantern or a fox, and travels to a floating island that has been waiting for it. Cranes circle overhead. Boats drift on the water. Bridges, shrines and trees rise from faint outlines into full colour as you play.</p>
+            <p>The sheet you just folded does not vanish. It gathers itself into a crane, a boat, a lantern or a fox, lifts off the board and flies to a floating island that has been waiting for it. Bridges, shrines and trees rise from faint outlines into full colour as you play.</p>
             <p>It is the same paper, from puzzle to world. What you fold is what you keep.</p>
+            <p class="js-only"><a class="btn btn-ghost" href="#play">Fold a sheet and wake this island</a></p>
           </div>
         </article>
 
@@ -345,7 +461,7 @@
             <p>Daily Discovery is one small puzzle a day, the same one for every player on that date. It is there if you want it, and it never nags.</p>
             <ul class="ticks" style="--c: var(--violet)">
               <li>Unlimited expeditions, five puzzles each.</li>
-              <li>Six flavours of puzzle, from torn paper to chains of light.</li>
+              <li>Seven flavours of puzzle, from torn paper to starlight.</li>
               <li>A new Daily Discovery every day, entirely optional.</li>
             </ul>
           </div>
@@ -358,23 +474,12 @@
       <div class="container">
         <div class="section-head center" data-reveal>
           <p class="eyebrow">The journey</p>
-          <h2 id="story-title">Three realms, one quiet story</h2>
-          <p class="lead">Lumi, a small spirit made of light, found you in the dark. Together you follow the old threads through three realms, 45 hand-tuned puzzles and 12 chapters, gathering memories for the Memory Atlas along the way.</p>
+          <h2 id="story-title">Five realms, one quiet story</h2>
+          <p class="lead">Lumi, a small spirit made of light, found you in the dark. Together you follow the old threads through five realms, 100 puzzles and 25 chapters, gathering memories for the Memory Atlas along the way. Each realm has its own sky, its own music and a new idea about folding.</p>
         </div>
         <ul class="realms">
           <li class="realm realm-garden" data-reveal>
-            <svg viewBox="0 0 320 170" aria-hidden="true">
-              <circle cx="238" cy="50" r="34" fill="url(#g-glow)"/>
-              <polygon points="150,150 163,150 160,96 154,96" fill="#8C7B8E"/>
-              <polygon points="157,34 204,72 184,112 130,112 110,70" fill="#F6B6D2"/>
-              <polygon points="157,34 204,72 158,80" fill="#FBD3E4"/>
-              <polygon points="110,70 158,80 130,112" fill="#EE9DC0"/>
-              <path d="M30 150 Q70 112 112 150" fill="none" stroke="#E88BB4" stroke-width="7" stroke-linecap="round"/>
-              <rect x="229" y="40" width="18" height="24" rx="5" fill="#F5BE54"/><rect x="233" y="36" width="10" height="4" fill="#C9973A"/><rect x="233" y="64" width="10" height="4" fill="#C9973A"/>
-              <rect x="268" y="84" width="14" height="19" rx="4" fill="#F5BE54" opacity="0.85"/>
-              <rect x="64" y="52" width="12" height="16" rx="4" fill="#F5BE54" opacity="0.8"/>
-              <line x1="0" y1="152" x2="320" y2="152" stroke="#42435A" stroke-opacity="0.16" stroke-width="2"/>
-            </svg>
+            <img src="assets/realms/garden.jpg" width="640" height="640" loading="lazy" decoding="async" alt="The Forgotten Garden: a floating island with a sakura tree, a pagoda, a waterfall and a red bridge.">
             <div class="realm-body">
               <h3>The Forgotten Garden</h3>
               <p class="realm-sub">Where the first threads were tied</p>
@@ -382,19 +487,7 @@
             </div>
           </li>
           <li class="realm realm-ocean" data-reveal>
-            <svg viewBox="0 0 320 170" aria-hidden="true">
-              <polygon points="84,112 236,112 204,146 116,146" fill="#F7FCFF"/>
-              <polygon points="160,112 236,112 204,146 160,146" fill="#CFE9F8"/>
-              <polygon points="160,40 206,108 160,108" fill="#FFFFFF"/>
-              <polygon points="160,40 160,108 122,108" fill="#CFE9F8"/>
-              <polygon points="268,146 286,146 283,82 271,82" fill="#F7FCFF"/>
-              <polygon points="266,82 288,82 277,64" fill="#4DA9F5"/>
-              <circle cx="277" cy="92" r="4" fill="#F5BE54"/>
-              <g fill="none" stroke="#4DA9F5" stroke-width="3" stroke-linecap="round" opacity="0.6">
-                <path d="M18 152 q14 -9 28 0 t28 0 t28 0"/><path d="M200 158 q14 -9 28 0 t28 0 t28 0 t28 0"/>
-              </g>
-              <circle cx="52" cy="60" r="5" fill="#4DA9F5" opacity="0.7"/><circle cx="76" cy="84" r="3" fill="#4DA9F5" opacity="0.5"/>
-            </svg>
+            <img src="assets/realms/ocean.jpg" width="640" height="640" loading="lazy" decoding="async" alt="The Crystal Ocean: an island with a lighthouse, glass boats and a whale above a bright sea.">
             <div class="realm-body">
               <h3>The Crystal Ocean</h3>
               <p class="realm-sub">A sea of glass between the fragments</p>
@@ -402,21 +495,27 @@
             </div>
           </li>
           <li class="realm realm-forest" data-reveal>
-            <svg viewBox="0 0 320 170" aria-hidden="true">
-              <polygon points="62,60 92,112 32,112" fill="#8FD6B6"/><polygon points="62,84 98,146 26,146" fill="#67CFA6"/><rect x="57" y="146" width="10" height="8" fill="#5E7F78"/>
-              <polygon points="266,44 296,100 236,100" fill="#8FD6B6"/><polygon points="266,72 304,146 228,146" fill="#4FB892"/><rect x="261" y="146" width="10" height="8" fill="#5E7F78"/>
-              <polygon points="112,84 128,44 150,84" fill="#FBFEF9"/><polygon points="208,84 192,44 170,84" fill="#FBFEF9"/>
-              <polygon points="118,82 128,56 142,82" fill="#F5B7C8"/><polygon points="202,82 192,56 178,82" fill="#F5B7C8"/>
-              <polygon points="108,84 212,84 160,146" fill="#FBFEF9"/>
-              <polygon points="160,84 212,84 160,146" fill="#D5EEDF"/>
-              <polygon points="152,134 168,134 160,146" fill="#274A47"/>
-              <circle cx="140" cy="102" r="3.4" fill="#274A47"/><circle cx="180" cy="102" r="3.4" fill="#274A47"/>
-              <circle cx="100" cy="36" r="4" fill="#67CFA6"/><circle cx="222" cy="30" r="3" fill="#F5BE54"/>
-            </svg>
+            <img src="assets/realms/forest.jpg" width="640" height="640" loading="lazy" decoding="async" alt="The Sleeping Forest: an island with evergreens, a moon rabbit, a fox shrine and a great tree wrapped in roots.">
             <div class="realm-body">
               <h3>The Sleeping Forest</h3>
               <p class="realm-sub">Roots that hold the world in place</p>
               <p>Evergreens, a fox shrine and the Heart Tree, where rooted paper and chains of light change how you fold.</p>
+            </div>
+          </li>
+          <li class="realm realm-observatory" data-reveal>
+            <img src="assets/realms/observatory.jpg" width="640" height="640" loading="lazy" decoding="async" alt="The Celestial Observatory: a pale island with a moon dial, a telescope dome and an orrery among the stars.">
+            <div class="realm-body">
+              <h3>The Celestial Observatory</h3>
+              <p class="realm-sub">Where the threads were mapped among the stars</p>
+              <p>A star stair, a moon dial and a great telescope, where starlight joins every light it touches.</p>
+            </div>
+          </li>
+          <li class="realm realm-archive" data-reveal>
+            <img src="assets/realms/archive.jpg" width="640" height="640" loading="lazy" decoding="async" alt="The Infinite Archive: an island of giant books, shelves and a loom, with paper cranes overhead.">
+            <div class="realm-body">
+              <h3>The Infinite Archive</h3>
+              <p class="realm-sub">Every fold the world has ever made</p>
+              <p>A paper gate, whispering shelves and a thousand cranes, at the heart of the world.</p>
             </div>
           </li>
         </ul>
@@ -494,7 +593,7 @@
                 <rect x="100" y="191" width="280" height="34" rx="11" fill="none"/>
                 <rect x="112" y="199" width="18" height="18" rx="3" fill="none" stroke="var(--muted)" stroke-width="1.800"/><line x1="121" y1="197" x2="121" y2="219" stroke="var(--muted)" stroke-width="1.800" stroke-dasharray="2 3"/>
                 <rect x="146" y="203" width="150" height="10" rx="5" fill="var(--line-strong)"/>
-                <rect x="98" y="229" width="284" height="38" rx="12" fill="color-mix(in srgb, #4DA9F5 16%, transparent)" stroke="var(--focus)" stroke-width="2.600"/>
+                <rect x="98" y="229" width="284" height="38" rx="12" fill="#4DA9F5" fill-opacity="0.16" stroke="var(--focus)" stroke-width="2.600"/>
                 <rect x="112" y="239" width="18" height="18" rx="3" fill="none" stroke="var(--ink)" stroke-width="1.800"/><line x1="110" y1="248" x2="132" y2="248" stroke="var(--ink)" stroke-width="1.800" stroke-dasharray="2 3"/>
                 <rect x="146" y="243" width="190" height="10" rx="5" fill="var(--ink)" opacity="0.75"/>
                 <rect x="112" y="279" width="18" height="18" rx="3" fill="none" stroke="var(--muted)" stroke-width="1.800"/><line x1="121" y1="277" x2="121" y2="299" stroke="var(--muted)" stroke-width="1.800" stroke-dasharray="2 3"/>
@@ -534,41 +633,59 @@
           </button>
         </div>
       </div>
-      <!-- SCREENSHOT SLOTS: replace assets/screens/01.png … 06.png with real iPhone screenshots (see README). -->
+      <!-- SCREENSHOTS: assets/screens/web/NN.jpg (shown here) and assets/screens/NN.png (full size). See README. -->
       <ul class="gallery" data-gallery tabindex="0" role="list" aria-label="Screenshots of FOLD">
         <li>
           <figure class="shot">
-            <img src="assets/screens/01.png" width="1206" height="2622" loading="lazy" decoding="async" alt="A puzzle in The Forgotten Garden: a translucent sheet with coloured lights, partly folded.">
+            <img src="assets/screens/web/01.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="The puzzle Four Corners in The Forgotten Garden: a white sheet with green and pink lights, its left edge lifting along a dashed crease.">
             <figcaption><strong>Fold</strong> A sheet, a few lights, one gesture.</figcaption>
           </figure>
         </li>
         <li>
           <figure class="shot">
-            <img src="assets/screens/02.png" width="1206" height="2622" loading="lazy" decoding="async" alt="Lights of the same colour meeting and glowing after a fold.">
-            <figcaption><strong>Match</strong> Lights of the same colour join.</figcaption>
+            <img src="assets/screens/web/02.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="A result card: a paper crane joins The Forgotten Garden.">
+            <figcaption><strong>Bloom</strong> Every solved sheet becomes origami.</figcaption>
           </figure>
         </li>
         <li>
           <figure class="shot">
-            <img src="assets/screens/03.png" width="1206" height="2622" loading="lazy" decoding="async" alt="A solved sheet turning into an origami crane.">
-            <figcaption><strong>Bloom</strong> The paper becomes origami.</figcaption>
+            <img src="assets/screens/web/03.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="The Forgotten Garden island fully restored, with Lumi floating beside it.">
+            <figcaption><strong>Rebuild</strong> A world that wakes as you play.</figcaption>
           </figure>
         </li>
         <li>
           <figure class="shot">
-            <img src="assets/screens/04.png" width="1206" height="2622" loading="lazy" decoding="async" alt="The floating island world with restored landmarks and origami figures.">
-            <figcaption><strong>Rebuild</strong> Your world, one figure at a time.</figcaption>
+            <img src="assets/screens/web/04.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="A puzzle in The Crystal Ocean, where small arrows mark creases that fold one way only.">
+            <figcaption><strong>Explore</strong> New rules in every realm.</figcaption>
           </figure>
         </li>
         <li>
           <figure class="shot">
-            <img src="assets/screens/05.png" width="1206" height="2622" loading="lazy" decoding="async" alt="The realm map and the Memory Atlas with collected memories.">
-            <figcaption><strong>Remember</strong> Realms, chapters and the Memory Atlas.</figcaption>
+            <img src="assets/screens/web/05.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="A puzzle in The Celestial Observatory with gold star lights among coloured lights.">
+            <figcaption><strong>Wonder</strong> Starlight joins every light it touches.</figcaption>
           </figure>
         </li>
         <li>
           <figure class="shot">
-            <img src="assets/screens/06.png" width="1206" height="2622" loading="lazy" decoding="async" alt="The Endless Weave screen with an expedition and the Daily Discovery.">
+            <img src="assets/screens/web/06.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="The Celestial Observatory island with a moon dial, a dome and an orrery.">
+            <figcaption><strong>Travel</strong> Five realms, each with its own sky.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="shot">
+            <img src="assets/screens/web/07.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="A chapter card: Chapter 11, Roots, in The Sleeping Forest, with a message from Lumi.">
+            <figcaption><strong>Listen</strong> A story told in 25 short chapters.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="shot">
+            <img src="assets/screens/web/08.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="The Infinite Archive island of giant books, shelves and a loom.">
+            <figcaption><strong>Arrive</strong> The Infinite Archive, where every fold is kept.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="shot">
+            <img src="assets/screens/web/09.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="The Endless Weave screen with an expedition called The Vault of Vesolas and the Daily Discovery.">
             <figcaption><strong>Wander</strong> The Endless Weave and Daily Discovery.</figcaption>
           </figure>
         </li>

@@ -74,6 +74,62 @@
       <polygon points="400,565 512,538 512,728" fill="var(--o-1)"/>
       <polygon points="512,538 630,565 512,728" fill="var(--o-4)"/>
     </symbol>
+    <defs>
+      <radialGradient id="g-lumi" cx="0.4" cy="0.35" r="0.75">
+        <stop offset="0" stop-color="#FFFFFF"/>
+        <stop offset="1" stop-color="#A9D6FF"/>
+      </radialGradient>
+      <radialGradient id="g-halo">
+        <stop offset="0.45" stop-color="#BFE6FF" stop-opacity="0.75"/>
+        <stop offset="1" stop-color="#BFE6FF" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <symbol id="lumi" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="24" fill="url(#g-halo)"/>
+      <circle cx="24" cy="25" r="15" fill="url(#g-lumi)" stroke="#8FC3F2" stroke-opacity="0.55"/>
+      <ellipse cx="19" cy="24.5" rx="1.9" ry="2.9" fill="#3A3760"/>
+      <ellipse cx="29" cy="24.5" rx="1.9" ry="2.9" fill="#3A3760"/>
+      <ellipse cx="15.2" cy="29.5" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.8"/>
+      <ellipse cx="32.8" cy="29.5" rx="2.6" ry="1.6" fill="#F7A8C4" opacity="0.8"/>
+    </symbol>
+    <symbol id="gl-b" viewBox="-20 -20 40 40"><path d="M0 -13 C 6 -4, 10 1, 10 6 A 10 10 0 1 1 -10 6 C -10 1, -6 -4, 0 -13 Z" fill="#fff"/></symbol>
+    <symbol id="gl-p" viewBox="-20 -20 40 40"><path transform="rotate(35)" d="M0 -14 C 10 -5, 10 7, 0 14 C -10 7, -10 -5, 0 -14 Z" fill="#fff"/></symbol>
+    <symbol id="gl-y" viewBox="-20 -20 40 40"><polygon points="0,-14 3.6,-4.9 13.3,-4.3 5.8,1.8 8.2,11.3 0,6 -8.2,11.3 -5.8,1.8 -13.3,-4.3 -3.6,-4.9" fill="#fff"/></symbol>
+    <symbol id="gl-g" viewBox="-20 -20 40 40"><path d="M-11 11 C -13 -4, -2 -14, 12 -12 C 14 2, 4 13, -11 11 Z" fill="#fff"/><path d="M-8 8 L 5 -5" stroke="#000" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="gl-v" viewBox="-20 -20 40 40"><path d="M5 -13 A 13.5 13.5 0 1 0 13 6 A 10.5 10.5 0 0 1 5 -13 Z" fill="#fff"/></symbol>
+    <symbol id="o-crane" viewBox="140 190 710 550"><use href="#crane" x="140" y="190" width="710" height="550"/></symbol>
+    <symbol id="o-butterfly" viewBox="0 0 200 160">
+      <polygon points="22,22 98,74 56,98" fill="#A18AF2"/>
+      <polygon points="22,22 98,74 76,34" fill="#C6B8FF"/>
+      <polygon points="178,22 102,74 144,98" fill="#8F78E8"/>
+      <polygon points="178,22 102,74 124,34" fill="#B3A2F5"/>
+      <polygon points="98,84 42,142 86,128" fill="#BBAAF7"/>
+      <polygon points="102,84 158,142 114,128" fill="#9A86EE"/>
+      <polygon points="100,58 93,98 100,144" fill="#F6F3FF"/>
+      <polygon points="100,58 107,98 100,144" fill="#D5CCF0"/>
+    </symbol>
+    <symbol id="o-lotus" viewBox="0 0 200 160">
+      <polygon points="14,100 72,90 86,124 40,128" fill="#F9C9DD"/>
+      <polygon points="186,100 128,90 114,124 160,128" fill="#F2A9C8"/>
+      <polygon points="40,90 90,54 86,120" fill="#F6B6D2"/>
+      <polygon points="160,90 110,54 114,120" fill="#EE9DC0"/>
+      <polygon points="100,28 70,104 100,130" fill="#FBD6E6"/>
+      <polygon points="100,28 130,104 100,130" fill="#EF8DB8"/>
+      <polygon points="40,128 100,128 100,148 70,148" fill="#7BD6B1"/>
+      <polygon points="100,128 160,128 130,148 100,148" fill="#4FB892"/>
+    </symbol>
+    <symbol id="o-star" viewBox="0 0 200 160">
+      <polygon points="100,80 100,14 116.5,57.3" fill="#FBD98A"/>
+      <polygon points="100,80 116.5,57.3 162.800,59.600" fill="#E9A93A"/>
+      <polygon points="100,80 162.800,59.600 126.600,88.700" fill="#FBD98A"/>
+      <polygon points="100,80 126.600,88.700 138.800,133.400" fill="#E9A93A"/>
+      <polygon points="100,80 138.800,133.400 100,108" fill="#FBD98A"/>
+      <polygon points="100,80 100,108 61.200,133.400" fill="#E9A93A"/>
+      <polygon points="100,80 61.200,133.400 73.400,88.700" fill="#FBD98A"/>
+      <polygon points="100,80 73.400,88.700 37.200,59.600" fill="#E9A93A"/>
+      <polygon points="100,80 37.200,59.600 83.5,57.3" fill="#FBD98A"/>
+      <polygon points="100,80 83.5,57.3 100,14" fill="#E9A93A"/>
+    </symbol>
   </svg>
 
   <header class="site-header">
@@ -123,7 +179,9 @@
                   <tr><th scope="row">Players</th><td>Single player</td></tr>
                   <tr><th scope="row">Language</th><td>English</td></tr>
                   <tr><th scope="row">Connection</th><td>None needed. Fully playable offline</td></tr>
-                  <tr><th scope="row">Content</th><td>3 realms, 45 story puzzles, 12 chapters, unlimited Endless Weave expeditions, a Daily Discovery</td></tr>
+                  <tr><th scope="row">Content</th><td>5 realms, 100 story puzzles, 25 chapters, unlimited Endless Weave expeditions, a Daily Discovery</td></tr>
+                  <tr><th scope="row">Music</th><td>Scott Buckley, used under CC BY 4.0 (see <a href="../credits/">credits</a>)</td></tr>
+                  <tr><th scope="row">Playable sample</th><td>The first four puzzles can be played in a browser on the <a href="../#play">home page</a></td></tr>
                   <tr><th scope="row">Accessibility</th><td>VoiceOver support, shape symbols on lights, high contrast, reduce motion, fold from a list</td></tr>
                   <tr><th scope="row">Privacy</th><td>No data collected. No accounts, analytics or third-party SDKs</td></tr>
                   <tr><th scope="row">Website</th><td><a href="https://foldgame.app/">foldgame.app</a></td></tr>
@@ -159,10 +217,10 @@
           </div>
           <div class="desc">
             <h3>Long</h3>
-            <p class="count">About 240 words</p>
+            <p class="count">About 255 words</p>
             <p>FOLD: Lumi's Paper World is a calm origami puzzle journey for iPhone.</p>
             <p>Each puzzle is a single translucent sheet scattered with coloured lights. Grab the sheet and fold it over itself: the crease follows your finger, settles onto the grid with a soft tap, and the flap lifts like real paper. When two lights of the same colour meet, they join. Join them all and the sheet folds itself into an origami figure, perhaps a crane, a boat, a lantern or a fox, which travels to a floating island and stays there. Bridges, shrines and trees rise from faint outlines into full colour as you play.</p>
-            <p>Guided by Lumi, a small spirit made of light, you follow the story through three realms: The Forgotten Garden, The Crystal Ocean and The Sleeping Forest. Together they hold 45 hand-tuned puzzles and 12 chapters, with new ideas along the way, from torn paper and one-way creases to sealed seams, rooted paper and chains of light. Beyond the story, the Endless Weave offers unlimited generated expeditions, and the Daily Discovery gives every player the same small puzzle each day.</p>
+            <p>Guided by Lumi, a small spirit made of light, you follow the story through five realms: The Forgotten Garden, The Crystal Ocean, The Sleeping Forest, The Celestial Observatory and The Infinite Archive. Together they hold 100 puzzles and 25 chapters, with new ideas along the way, from torn paper and one-way creases to sealed seams, rooted paper, chains of light and starlight. Each realm has its own sky and its own music. Beyond the story, the Endless Weave offers unlimited generated expeditions, and the Daily Discovery gives every player the same small puzzle each day.</p>
             <p>FOLD is free and quiet by design. There are no ads, no purchases, no timers and no accounts. It collects no data and plays fully offline. Hints are unlimited, every fold can be undone, and accessibility options include shape symbols on lights, high contrast, reduced motion and folding from a list with full VoiceOver support.</p>
           </div>
         </section>
@@ -172,7 +230,7 @@
           <ul class="ticks" style="--c: var(--violet)">
             <li>One tactile gesture: fold a sheet of paper with a live, physical-feeling hinge.</li>
             <li>Every solved puzzle becomes an origami figure that lives on in a persistent 3D world.</li>
-            <li>A complete first story arc across three realms, 45 puzzles and 12 chapters, with a Memory Atlas to fill.</li>
+            <li>A complete story across five realms, 100 puzzles and 25 chapters, with a Memory Atlas to fill.</li>
             <li>Endless Weave: unlimited generated expeditions, each puzzle verified as solvable.</li>
             <li>Daily Discovery: one shared puzzle a day, entirely optional.</li>
             <li>Free, with no ads, purchases, timers, accounts or data collection. Fully offline.</li>
@@ -182,43 +240,61 @@
 
         <section class="section-tight" aria-labelledby="shots-title" style="padding-bottom: 0">
           <h2 id="shots-title">Screenshots</h2>
-          <p class="muted">Select a screenshot to open the full-size image.</p>
-          <!-- SCREENSHOT SLOTS: assets/screens/01.png … 06.png (see README). -->
+          <p class="muted">Select a screenshot to open the full-size PNG.</p>
+          <!-- SCREENSHOTS: thumbnails in assets/screens/web/, full size in assets/screens/ (see README). -->
           <ul class="shots-grid">
             <li>
               <figure class="shot">
-                <a href="../assets/screens/01.png"><img src="../assets/screens/01.png" width="1206" height="2622" loading="lazy" decoding="async" alt="A puzzle in The Forgotten Garden: a translucent sheet with coloured lights, partly folded."></a>
+                <a href="../assets/screens/01.png"><img src="../assets/screens/web/01.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="The puzzle Four Corners in The Forgotten Garden: a white sheet with green and pink lights, its left edge lifting along a dashed crease."></a>
                 <figcaption>01 · Fold</figcaption>
               </figure>
             </li>
             <li>
               <figure class="shot">
-                <a href="../assets/screens/02.png"><img src="../assets/screens/02.png" width="1206" height="2622" loading="lazy" decoding="async" alt="Lights of the same colour meeting and glowing after a fold."></a>
-                <figcaption>02 · Match</figcaption>
+                <a href="../assets/screens/02.png"><img src="../assets/screens/web/02.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="A result card: a paper crane joins The Forgotten Garden."></a>
+                <figcaption>02 · Bloom</figcaption>
               </figure>
             </li>
             <li>
               <figure class="shot">
-                <a href="../assets/screens/03.png"><img src="../assets/screens/03.png" width="1206" height="2622" loading="lazy" decoding="async" alt="A solved sheet turning into an origami crane."></a>
-                <figcaption>03 · Bloom</figcaption>
+                <a href="../assets/screens/03.png"><img src="../assets/screens/web/03.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="The Forgotten Garden island fully restored, with Lumi floating beside it."></a>
+                <figcaption>03 · The Forgotten Garden</figcaption>
               </figure>
             </li>
             <li>
               <figure class="shot">
-                <a href="../assets/screens/04.png"><img src="../assets/screens/04.png" width="1206" height="2622" loading="lazy" decoding="async" alt="The floating island world with restored landmarks and origami figures."></a>
-                <figcaption>04 · Rebuild</figcaption>
+                <a href="../assets/screens/04.png"><img src="../assets/screens/web/04.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="A puzzle in The Crystal Ocean, where small arrows mark creases that fold one way only."></a>
+                <figcaption>04 · The Crystal Ocean</figcaption>
               </figure>
             </li>
             <li>
               <figure class="shot">
-                <a href="../assets/screens/05.png"><img src="../assets/screens/05.png" width="1206" height="2622" loading="lazy" decoding="async" alt="The realm map and the Memory Atlas with collected memories."></a>
-                <figcaption>05 · Remember</figcaption>
+                <a href="../assets/screens/05.png"><img src="../assets/screens/web/05.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="A puzzle in The Celestial Observatory with gold star lights among coloured lights."></a>
+                <figcaption>05 · Starlight</figcaption>
               </figure>
             </li>
             <li>
               <figure class="shot">
-                <a href="../assets/screens/06.png"><img src="../assets/screens/06.png" width="1206" height="2622" loading="lazy" decoding="async" alt="The Endless Weave screen with an expedition and the Daily Discovery."></a>
-                <figcaption>06 · Wander</figcaption>
+                <a href="../assets/screens/06.png"><img src="../assets/screens/web/06.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="The Celestial Observatory island with a moon dial, a dome and an orrery."></a>
+                <figcaption>06 · The Celestial Observatory</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="shot">
+                <a href="../assets/screens/07.png"><img src="../assets/screens/web/07.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="A chapter card: Chapter 11, Roots, in The Sleeping Forest, with a message from Lumi."></a>
+                <figcaption>07 · Story</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="shot">
+                <a href="../assets/screens/08.png"><img src="../assets/screens/web/08.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="The Infinite Archive island of giant books, shelves and a loom."></a>
+                <figcaption>08 · The Infinite Archive</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="shot">
+                <a href="../assets/screens/09.png"><img src="../assets/screens/web/09.jpg" width="804" height="1748" loading="lazy" decoding="async" alt="The Endless Weave screen with an expedition called The Vault of Vesolas and the Daily Discovery."></a>
+                <figcaption>09 · Endless Weave</figcaption>
               </figure>
             </li>
           </ul>

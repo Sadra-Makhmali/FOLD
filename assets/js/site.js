@@ -31,52 +31,6 @@
     revealItems.forEach(function (item) { item.classList.add('is-visible'); });
   }
 
-  /* Hero: fold the sheet, the lights meet, the paper becomes a crane. */
-  var demo = document.querySelector('[data-fold-demo]');
-  if (demo) {
-    var button = demo.querySelector('[data-fold-button]');
-    var label = demo.querySelector('[data-fold-label]');
-    var status = demo.querySelector('[data-fold-status]');
-    var stage = demo.querySelector('[data-fold-stage]');
-    var timers = [];
-    var busy = false;
-
-    var setState = function (state) { demo.setAttribute('data-state', state); };
-    var later = function (fn, ms) { timers.push(window.setTimeout(fn, ms)); };
-
-    var play = function () {
-      var quick = reduceMotion.matches;
-      busy = true;
-      button.setAttribute('aria-disabled', 'true');
-      setState('folded');
-      status.textContent = 'The sheet folds in half and three pairs of lights meet.';
-      later(function () { setState('matched'); }, quick ? 200 : 950);
-      later(function () {
-        setState('origami');
-        status.textContent = 'The paper becomes an origami crane.';
-        label.textContent = 'Unfold and try again';
-        button.removeAttribute('aria-disabled');
-        busy = false;
-      }, quick ? 600 : 1900);
-    };
-
-    var reset = function () {
-      timers.forEach(window.clearTimeout);
-      timers = [];
-      setState('flat');
-      label.textContent = 'Fold the sheet';
-      status.textContent = 'The sheet is flat again.';
-    };
-
-    var toggle = function () {
-      if (busy) { return; }
-      if (demo.getAttribute('data-state') === 'flat') { play(); } else { reset(); }
-    };
-
-    button.addEventListener('click', toggle);
-    if (stage) { stage.addEventListener('click', toggle); }
-  }
-
   /* Screenshot strip: previous / next buttons. */
   var strip = document.querySelector('[data-gallery]');
   if (strip) {
